@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Zephyr Adventures</title>
+    <title>Nova - Zephyr Adventures</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -111,12 +111,6 @@
             color: var(--primary-color);
         }
 
-        .menu a.active {
-            background: var(--bg-primary);
-            color: var(--primary-color);
-            font-weight: 600;
-        }
-
         /* Dropdown Menu */
         .dropdown {
             position: relative;
@@ -169,6 +163,12 @@
             color: var(--primary-color);
         }
 
+        .menu a.active {
+            background: var(--bg-primary);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
         .menu-toggle {
             display: none;
             background: none;
@@ -181,34 +181,72 @@
 
         /* Main Content */
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 2rem;
+        }
+
+        .hero {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 4rem 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image {
+            margin: 3rem 0 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-color);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .content-section {
             background: var(--bg-secondary);
             border-radius: 16px;
             padding: 3rem;
+            margin-bottom: 2rem;
             box-shadow: var(--shadow-md);
             border: 1px solid var(--border-color);
         }
 
-        .content-section h1 {
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
         .content-section h2 {
             color: var(--text-primary);
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            font-weight: 600;
-            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
         }
 
         .content-section p {
@@ -218,21 +256,16 @@
             line-height: 1.75;
         }
 
-        .content-section strong {
-            color: var(--text-primary);
-            font-weight: 600;
+        .content-section ul {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            padding-left: 2rem;
+            font-size: 1.0625rem;
+            line-height: 1.75;
         }
 
-        .content-section a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        .content-section a:hover {
-            color: var(--primary-dark);
-            text-decoration: underline;
+        .content-section li {
+            margin-bottom: 0.75rem;
         }
 
         .back-link {
@@ -295,20 +328,20 @@
                 content: ' ▶';
             }
 
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
             .container {
                 padding: 2rem 1rem;
             }
 
+            .hero {
+                padding: 2.5rem 1.5rem;
+            }
+
             .content-section {
                 padding: 2rem 1.5rem;
-            }
-
-            .content-section h1 {
-                font-size: 2rem;
-            }
-
-            .content-section h2 {
-                font-size: 1.25rem;
             }
         }
     </style>
@@ -328,41 +361,49 @@
                 <li class="dropdown">
                     <a href="#">Friends</a>
                     <ul class="dropdown-menu">
-                        <li><a href="nova.html">Nova</a></li>
+                        <li><a href="nova.html" class="active">Nova</a></li>
                         <li><a href="time-capsule.html">Time Capsule</a></li>
                     </ul>
                 </li>
                 <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <div class="content-section">
-            <h1>Privacy Policy</h1>
-            <p><strong>Last updated:</strong> December 15, 2025</p>
+        <div class="hero">
+            <h1>Nova</h1>
+            <p>Discover the mind • Understand yourself • Live wiser</p>
             
-            <h2>1. Information We Collect</h2>
-            <p>We collect minimal data necessary for video publishing services. We do not collect personal information from viewers.</p>
-            
-            <h2>2. How We Use Information</h2>
-            <p>Information is used solely for publishing content to social media platforms (YouTube, TikTok, Instagram).</p>
-            
-            <h2>3. Data Sharing</h2>
-            <p>We do not sell or share personal data with third parties.</p>
-            
-            <h2>4. Children's Privacy</h2>
-            <p>Our content is designed for children. We comply with COPPA (Children's Online Privacy Protection Act) guidelines. We do not knowingly collect personal information from children under 13.</p>
-            
-            <h2>5. Third-Party Platforms</h2>
-            <p>Our videos are published on third-party platforms (YouTube, TikTok, Instagram) which have their own privacy policies.</p>
-            
-            <h2>6. Contact</h2>
-            <p>For privacy questions, contact: <a href="mailto:zephyradventures@email.com">zephyradventures@email.com</a></p>
-            
-            <a href="index.html" class="back-link">← Back to Home</a>
+            <div class="hero-image">
+                <img src="img/nova_1.png" alt="Nova - Spark Minds">
+            </div>
         </div>
+
+        <div class="content-section">
+            <h2>About Nova</h2>
+            <p>Nova is a channel inspired by psychology, philosophy, and practical life strategies. We create short, intense episodes (30–60s) that spark reflection and help you better understand yourself and others.</p>
+            
+            <h2>✨ Mission</h2>
+            <p>Help viewers:</p>
+            <ul>
+                <li>Understand the motivations behind human behavior</li>
+                <li>Gain life wisdom from classical philosophical schools</li>
+                <li>Develop emotional intelligence</li>
+                <li>Build healthy relationships based on self-awareness and interpersonal skills</li>
+            </ul>
+
+            <h2>Who is Nova For?</h2>
+            <ul>
+                <li>🔹 For those curious about the psychology of everyday life</li>
+                <li>🔹 For young adults — seeking personal development</li>
+                <li>🔹 For those tired of clickbait — who want real value</li>
+                <li>🔹 For those who consciously want to build relationships and better understand themselves</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
     </div>
 
     <script>
@@ -383,3 +424,4 @@
     </script>
 </body>
 </html>
+
